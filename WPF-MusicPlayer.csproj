@@ -104,10 +104,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icon Full Colour.jpg" />
+    <Resource Include="Icon Mono Black.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icon Mono Black.jpg" />
+    <Resource Include="Background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />

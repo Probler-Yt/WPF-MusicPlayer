@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_MusicPlayer"
         mc:Ignorable="d"
-        Title="Music Player" Height="180" Width="450" Background="#bbff00" Icon="Icon Mono Black.jpg" FontFamily="Lucida Sans Unicode" MinWidth="450" MinHeight="179">
+        Title="Music Player" Height="180" Width="450" Icon="Icon Mono Black.jpg" FontFamily="Lucida Sans Unicode" MinWidth="450" MinHeight="179" Topmost="True"> 
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Background.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center"
                     HorizontalAlignment="Center">
             <TextBlock FontSize="18" Text="File Name: "/>
@@ -18,8 +21,7 @@
             <Button FontSize="18" Content="Pause" Width="100" Margin="10,10,10,0" Click="BT_Click_Pause" Height="31" VerticalAlignment="Top"/>
             <Button FontSize="18" Content="Stop" Width="100" Margin="10" Click="BT_Click_Stop"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">
-            <TextBlock FontSize="18" Text="Volume Slider"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">            <TextBlock FontSize="18" Text="Volume Slider"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="35">
             <Slider Name="volumeSlider" ValueChanged="ChangeMediaVolume" 
